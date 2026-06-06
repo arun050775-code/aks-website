@@ -1,4 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
+import Portal from "./portal/Portal.jsx";
+
+// Check if URL is /portal
+if (window.location.pathname === "/portal") {
+  export default Portal;  // Actually do this differently
+}
 
 const NAV_LINKS = ["Home", "About", "Services", "Team", "Contact"];
 
